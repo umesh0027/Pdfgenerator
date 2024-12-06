@@ -133,7 +133,7 @@ const MergePDF = () => {
     const loadingToast = toast.loading("Merging PDFs... Please wait...", { id: "loading" });
 
     try {
-      const response = await axios.post('http://localhost:5000/api/merge-pdf', formData, {
+      const response = await axios.post('https://pdfgenerator-6vps.onrender.com/api/merge-pdf', formData, {
         responseType: 'blob', // Expecting a binary blob (PDF file)
         headers: { 'Content-Type': 'multipart/form-data' },
       });
