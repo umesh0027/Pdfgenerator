@@ -5,7 +5,7 @@
 
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
+import Pdflogo from "../images/PDFIFY LOGO.png"
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);  // For the mobile menu
   const [dropdownOpen, setDropdownOpen] = useState(false);  // For the dropdown menu
@@ -21,12 +21,16 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-blue-300 p-4 shadow-md">
+    <nav className="bg-blue-300 p-1 shadow-md">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
+        
         {/* Logo */}
-        <div className="flex items-center space-x-1 text-3xl font-bold">
-          <Link to="/" className="text-pink-600">PDF</Link>
-          <Link to="/" className="text-white">ify</Link>
+        <div className="">
+           <Link to="/">
+            <img src={Pdflogo} alt="PDFify" width={150} height={40} loading="lazy" className="" />
+          </Link>
+{/*           <Link to="/" className="text-pink-600">PDF</Link>
+          <Link to="/" className="text-white">ify</Link> */}
         </div>
 
         {/* Menu (Desktop and Mobile) */}
