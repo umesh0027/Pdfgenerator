@@ -1,0 +1,50 @@
+
+
+
+
+.install-prompt {
+    /* display: none; */
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    border-radius: 8px;
+    z-index: 9999;
+  }
+  
+  .install-prompt-content {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+  
+  .install-button {
+    background-color: #4CAF50;
+   
+    color: white;
+    border: none;
+    padding: 5px 11px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  .install-prompt-header {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .close-button {
+    
+    border: none;
+    padding: 1px 6px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    position: absolute;
+    top: 2px;
+    right: 3px;
+  }
+  
