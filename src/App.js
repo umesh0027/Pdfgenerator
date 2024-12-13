@@ -6,7 +6,7 @@ import { Route, Routes, useNavigate,useLocation } from "react-router-dom"
 // import "./styles/App.css";
 import UploadImages from "./Components/ImageUploads";
 import MergePDF from "./Components/MergePDF";
-
+import About from "./Components/About"
 function App() {
   const [pdfUrl, setPdfUrl] = useState("");
 
@@ -20,7 +20,7 @@ function App() {
 
       <Route path="/" element={<UploadImages onPdfDownload={handlePdfDownload} />}/>
       <Route path="/merge" element={<MergePDF/> }/>
-    
+     <Route path="/about" element={<About/>}/>
       </Routes>
           
       {/* <UploadImages onPdfDownload={handlePdfDownload} /> */}
