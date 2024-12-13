@@ -52,7 +52,7 @@ const Navbar = () => {
             )}
           </div>
 
-          <Link to="/" className="font-semibold">About</Link>
+          <Link to="/about" className="font-semibold">About</Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -99,7 +99,7 @@ const Navbar = () => {
           )}
         </div>
 
-        <Link to="/" className="text-white font-semibold hover:text-pure-greys-900 space-y-2 mt-2">About</Link>
+        <Link to="/about" className="text-white font-semibold hover:text-pure-greys-900 space-y-2 mt-2">About</Link>
       </div>
     </nav>
   );
