@@ -3,7 +3,7 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const pdfRoutes = require('./routes/Pdfroutes');
 const mergepdfRoutes = require('./routes/MergePdfroutes');
-
+const compressPdfRoutes = require("./routes/CompressPDfroutes");
 const path = require('path');
 const dotenv = require("dotenv");
 const app = express();
@@ -22,7 +22,7 @@ app.use(bodyParser.json());
 // Routes
 app.use('/api', pdfRoutes);
 app.use('/api', mergepdfRoutes); 
-
+app.use("/api/pdf", compressPdfRoutes);
 
 
 app.get("/", (req, res) => {
