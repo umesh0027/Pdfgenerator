@@ -305,7 +305,7 @@ const MergePDF = () => {
           {/* Drag-and-drop or File Input */}
           <div
             {...getRootProps()}
-            className="w-3/4 h-20 flex justify-center items-center bg-pink-150 border-gray-300 rounded-xl cursor-pointer mb-6 mx-auto"
+            className="w-3/4 h-20 flex justify-center items-center bg-pink-150 hover:bg-pink-200 border-gray-300 rounded-xl cursor-pointer mb-6 mx-auto"
           >
             <input {...getInputProps()} />
             <p className="text-center text-white font-bold mx-2">
