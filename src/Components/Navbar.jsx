@@ -36,7 +36,7 @@ const Navbar = () => {
         {/* Menu (Desktop and Mobile) */}
         <div className="hidden md:flex space-x-6 text-white font-semibold">
           <Link to="/">Home</Link>
-
+<Link to="/compress">Compress PDF</Link>
           {/* Tool Link with Dropdown for Desktop */}
           <div className="relative">
             <button onClick={toggleDropdown} className="text-white font-semibold">
@@ -80,7 +80,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} flex flex-col text-white py-4`}>
         <Link to="/" className="text-white font-semibold hover:text-pure-greys-900 space-y-2">Home</Link>
-
+<Link to="/compress"  className="text-white font-semibold hover:text-pure-greys-900 space-y-2 mt-2">Compress PDF</Link>
         {/* Tool Link with Dropdown for Mobile */}
         <div className="relative">
           <button
