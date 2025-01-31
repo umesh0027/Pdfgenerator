@@ -78,7 +78,7 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu */}
-      <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} flex flex-col text-white py-4`}>
+      <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} flex flex-col text-white py-4 text-center`}>
         <Link to="/" className="text-white font-semibold hover:text-pure-greys-900 space-y-2">Home</Link>
 <Link to="/compress"  className="text-white font-semibold hover:text-pure-greys-900 space-y-2 mt-2">Compress PDF</Link>
         {/* Tool Link with Dropdown for Mobile */}
