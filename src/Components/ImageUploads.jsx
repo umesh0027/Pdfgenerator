@@ -26,7 +26,7 @@
 //     try {
 //       const response = await axios.post('http://localhost:5000/api/generate-pdf', formData, {
 //         headers: { 'Content-Type': 'multipart/form-data' },
-//         responseType: 'blob', // Expect the response as a file
+//         responseType: 'blob', // Expect the response as a file.com
 //       });
 
 //       // Create a download link for the PDF
@@ -85,7 +85,7 @@
 //     const loadingToast = toast.loading("Generating PDF... Please wait...", { id: "loading" });
 
 //     try {
-//       const response = await axios.post('https://pdfgenerator-rt8f.onrender.com/api/generate-pdf', formData, {
+//       const response = await axios.post('https://pdfgenerator-6vps.onrender.com/api/generate-pdf', formData, {
 //         headers: { 'Content-Type': 'multipart/form-data' },
 //         responseType: 'blob', // Expect the response as a file (PDF)
 //       });
@@ -210,7 +210,7 @@ const ImageUpload = () => {
     const loadingToast = toast.loading("Generating PDF... Please wait...", { id: "loading" });
 
     try {
-      const response = await axios.post('https://pdfgenerator-rt8f.onrender.com/api/generate-pdf', formData, {
+      const response = await axios.post('https://pdfgenerator-6vps.onrender.com/api/generate-pdf', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
         responseType: 'blob', // Expect the response as a file (PDF)
       });
