@@ -39,7 +39,7 @@ const PdfUploader = () => {
     const loadingToast = toast.loading("Compressing PDF... Please wait...", { id: "loading" });
 
     try {
-      const response = await axios.post('https://pdfgenerator-rt8f.onrender.com/api/pdf/compress', formData, {
+      const response = await axios.post('https://pdfgenerator-6vps.onrender.com/api/pdf/compress', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
         responseType: 'blob', // Expect the response as a file (PDF)
       });
@@ -172,4 +172,5 @@ const PdfUploader = () => {
 };
 
 export default PdfUploader;
+
 
